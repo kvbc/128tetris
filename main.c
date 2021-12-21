@@ -76,7 +76,6 @@ static void setblock (u8 idx)
 static void print (u128 _board)
 {
     system("cls"); // yeah stinks but my eyes hurt
-
     printf("\r/==========\\\n");
     u128 mp = (u128)1 << 127; // mask pointer
     for (u8 y = 0; y < BOARD_HEIGHT; y++)
