@@ -6,4 +6,6 @@ At the current time being, completely Windows and GCC specific
 
 # Compiling
 
-> gcc main.c && ./a
+```
+gcc main.c && ./a
+```
