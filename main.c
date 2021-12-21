@@ -37,7 +37,7 @@ typedef __uint128_t u128;
 #define BLOCK_WIDTH(block)        (((u64)(block) & 0b111000) >> 3) // next three is width
 #define BLOCK_MOVE(block, x, y)   ((block) >> ((x) + (y) * BOARD_WIDTH))
 
-#define REFRESH_DELAY 0.5
+#define REFRESH_DELAY 0.5 // in seconds
 
 /*
  * tetris
