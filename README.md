@@ -9,5 +9,5 @@ Some of the block rotations are scuffed, but the general idea is there!
 # Building
 
 ```
-gcc main.c && ./a
+gcc -O2 main.c && ./a
 ```
