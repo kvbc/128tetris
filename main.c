@@ -3,11 +3,7 @@
 #include <stdio.h>
 #include <conio.h> // _kbhit, _getch
 #include <time.h>
-
-#if defined(WIN32) || defined(_WIN32) || defined(__WIN32) && !defined(__CYGWIN__)
-#define IS_WIN
 #include <windows.h> // system("cls")
-#endif
 
 /*
  * types
@@ -79,9 +75,7 @@ static void setblock (u8 idx)
 
 static void print (u128 _board)
 {
-#ifdef IS_WIN
     system("cls"); // yeah stinks but my eyes hurt
-#endif
 
     printf("\r/==========\\\n");
     u128 mp = (u128)1 << 127; // mask pointer
